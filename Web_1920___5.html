@@ -24,7 +24,7 @@
 	#Web_1920___5 {
 		position: absolute;
 		width: 1920px;
-		height: 1080px;
+		height: 909px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
 		--web-view-name: Web 1920 – 5;
@@ -73,10 +73,10 @@
 	.Rectangle_28 {
 		position: absolute;
 		overflow: visible;
-		width: 324px;
+		width: 210px;
 		height: 92px;
-		left: 1546px;
-		top: 940px;
+		left: 1630px;
+		top: 780px;
 		--web-animation: fadein 0.3s ease-out;
 		--web-action-type: page;
 		--web-action-target: Web_1920___6.html;
@@ -84,11 +84,15 @@
 	}
 	#Go_to_email {
 		position: absolute;
-		left: 1614px;
-		top: 968px;
+		left: 1667px;
+		top: 808px;
 		overflow: visible;
 		width: 155px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Web_1920___6.html;
+		cursor: pointer;
 		text-align: left;
 		font-family: Segoe UI;
 		font-style: normal;
@@ -2529,10 +2533,10 @@ window.application = new Application();
 		<span>We will notify you by email when a match is found </span>
 	</div>
 	<svg class="Rectangle_28">
-		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" onclick="application.goToTargetView(event)" id="Rectangle_28" rx="0" ry="0" x="0" y="0" width="324" height="92">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" onclick="application.goToTargetView(event)" id="Rectangle_28" rx="0" ry="0" x="0" y="0" width="210" height="92">
 		</rect>
 	</svg>
-	<div id="Go_to_email">
+	<div onclick="application.goToTargetView(event)" id="Go_to_email">
 		<span>Go to email</span>
 	</div>
 </div>
